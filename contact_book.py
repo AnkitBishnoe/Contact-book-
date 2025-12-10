@@ -17,7 +17,7 @@ class ContactBook:
                 with open(self.filename, 'r') as f:
                     return json.load(f)
             except json.JSONDecodeError:
-                print("Error reading contacts file. Starting with empty contact list.")
+                print("Errorr reading contacts file. Starting with empty contact list.")
                 return {}
         return {}
     
@@ -252,3 +252,4 @@ def main():
 # Run application if executed directly
 if __name__ == "__main__":
     main()
+
